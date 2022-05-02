@@ -33,12 +33,12 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto me-2">
-              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <!-- <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li> -->
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>              
               <!-- <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li> -->
               <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-              <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-              <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
+              <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>              
+              <li class="nav-item"><a class="nav-link" href="#placement">Work Placement</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
               <li class="nav-item"><a class="nav-link" href="/uploads/Suwani_Boteju.pdf">CV</a></li>
             </ul>
           </div>
@@ -81,9 +81,9 @@
     <div class="row">
       <div class="col-md-6">
         <h2 class="h4 my-2">Hello!</h2>
-        <p>I'm a motivated, hardworking software developer experienced in both software developing and software testing</p>
-        <p>I received my bachelor's degree in Information Technology specialized in <span class="fw-bolder"> Software Engineering </span> from Sri Lanka Institute of Information Technology in 2018.</p>
-        <p>Currently studying MSc Computer science at University of Northampton and Looking for responsibilities as a Software developer in a growing organization.</p>
+        <p>I'm a motivated, hardworking software developer experienced in both software development and software testing</p>
+        <p>I received my bachelor's degree in Information Technology specialized in <span class="fw-bolder"> Software Engineering </span> from the Sri Lanka Institute of Information Technology in 2018.</p>
+        <p>Currently studying MSc Computer science at the University of Northampton and looking for responsibilities as a Software developer in a growing organization.</p>
         <p>It is 3+ Years of Industrial Experience!</p>
         <div class="row mt-3">                  
           <div class="col-sm-4">
@@ -252,8 +252,11 @@
 </div>
 <!--js code to open with email-->
 <script>
-  function sendmail(){
-    window.open('mailto:shimasha22@gmail.com?subject=subject&body=body');
+  function openmail(){
+    var name = document.getElementById("name").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+    window.open('mailto:shimasha22@gmail.com?subject='+subject+'&body='+ message);
   }
 </script>
 
@@ -265,7 +268,8 @@
     <div class="row"> 
       <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="100">
         <h4 class="d-flex ms-md-4">University of Northampton</h4>
-        <div class="d-flex ms-md-3"><span class="m-2">Reading MSc in Computer Science with modules Internet programming, Intelligent Systems, Mobile application development, Modern software architecture, Databases, Visual object software and course completion year is January 2023.</span></div>
+        <div class="d-flex ms-md-3"><span class="m-2">Reading MSc in Computer Science with modules Internet programming, Intelligent Systems, Mobile application development, Modern software architecture, Databases, Visual object software. 
+          Course completion year is January 2023.</span></div>
         <div class="d-flex justify-content-end align-items-end">
           <div class="text-end me-2">
             <div class="fw-bolder"></div>
@@ -285,7 +289,52 @@
       </div>
     </div>
   </div>
+</div><!---->
+<div class="section px-3 px-lg-4 pt-5" id="placement">
+  <div class="container-narrow">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">Work Placement & Process</h2>
+    </div>
+    <div class="row">     
+      <div class="col-md-6">
+        <div class="card mb-3" data-aos="fade-right" data-aos-delay="100">
+          <div class="card-header px-3 py-2">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h3 class="h5 mb-1">Work Placement</h3>                
+              </div><img src="images/services/app-development.svg" width="48" height="48" alt="work placement"/>
+            </div>
+          </div>
+          <div class="card-body px-3 py-2">
+            <p>I'm primarily looking for a Software Engineering placement opportunity to show off my technical expertise and leadership skills as part of an expert team.</p>
+            <p>While contributing to the company, I would like to expertise knowledge of architectural processes to develop  
+              optimal solutions, timely and highly maintainable code delivery, design patterns and code quality.</p>
+            <p>I'm excited about the opportunity to leverage my unique range of skills, and I'm eager to demonstrate my commitment to developing world-class software solutions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-3" data-aos="fade-left" data-aos-delay="100">
+          <div class="card-header px-3 py-2">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h3 class="h5 mb-1">Processes</h3>
+              </div><img src="images/services/web-design.svg" width="48" height="48" alt="web design"/>
+            </div>
+          </div>
+          <div class="card-body px-3 py-2">
+            <p>I have contributed to the leading companies as a Software Engineer and Software Tester.</p>
+            <p>While working as a Software Engineer I was able to expertise my soft development skills with 
+              software design patterns, code quality, best practices, optimal solutions and coding concepts </p>
+            <p>During my leisure time, I used to learn new technical concepts and develop applications with new programming languages and frameworks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<!---->
+
 <div class="section px-2 px-lg-4 pb-4 pt-5 mb-5" id="contact"> 
   <div class="container-narrow">
     <div class="text-center mb-5">
@@ -294,21 +343,20 @@
     <div class="row">
       <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
         <div class="bg-light my-2 p-3 pt-2">
- <form action="https://formspree.io/shimasha22@gmail.com"
-    method="POST">
+ <form>
     <div class="form-group my-2">
       <label for="name" class="form-label fw-bolder">Name</label>
       <input class="form-control" type="text" id="name" name="name" required>
     </div>
     <div class="form-group my-2">
-      <label for="email" class="form-label fw-bolder">Email</label>
-      <input class="form-control" type="email" id="email" name="_replyto" required>
+      <label for="subject" class="form-label fw-bolder">Subject</label>
+      <input class="form-control" type="subject" id="subject" name="_replyto" required>
     </div>
   <div class="form-group my-2">
     <label for="message" class="form-label fw-bolder">Message</label>
     <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required></textarea>
   </div>
-  <button class="btn btn-primary mt-2"  onclick="sendmail">Send</button>
+  <button class="btn btn-primary mt-2" onclick="openmail()">Open with email</button>
 </form>
         </div>
       </div>
@@ -316,7 +364,7 @@
         <div class="mt-3 px-1">
           <div class="h5">Let’s talk how I can help you!</div>
           <p>If you like my work and want to avail my services then drop me a message using the contact form. </p>
-          <p>Or get in touch using my email, skype or my contact number.</p>
+          <p>Or get in touch using my email or my contact number.</p>
           <p>See you!</p>
         </div>
         <div class="mt-53 px-1">
@@ -325,19 +373,13 @@
               <div class="pb-1">Email:</div>
             </div>
             <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">walter@company.com</div>
-            </div>
-            <div class="col-sm-2">
-              <div class="pb-1">Skype:</div>
-            </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">username@skype.com</div>
-            </div>
+              <div class="pb-1 fw-bolder">shimasha22@gmail.com</div>
+            </div>          
             <div class="col-sm-2">
               <div class="pb-1">Phone:</div>
             </div>
             <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">+0718-111-0011</div>
+              <div class="pb-1 fw-bolder">079 88 6368 57</div>
             </div>
           </div>
         </div>
@@ -345,6 +387,7 @@
     </div>
   </div>
 </div>
+
 <footer class="pt-4 pb-4 text-center bg-light">
   <div class="container">
     <div class="my-3">
@@ -353,10 +396,15 @@
           <ul class="nav justify-content-center">    
             <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/suwani.boteju/" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a></li>            
             <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/suwani-boteju-824029b8/" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>      
+            <li class="nav-item"><a class="nav-link" href="https://github.com/wshboteju" title="GitHub"><i class="bi bi-github"></i><span class="menu-title sr-only">GitHub</span></a></li> 
           </ul>
         </nav>
       </div>
     </div>
+  </div>
+  <div class="text-small text-secondary">
+  <div>
+      <!-- Make sure to buy a license for the template before removing the line below. Buy license on https://templateflip.com/ -->Design - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
   </div>
 </footer></div>
     </div>
